@@ -1,8 +1,11 @@
-.TL General Assumption
+.TL 
+General Assumption
 
-.AU Georg vom Endt
+.AU
+ Georg vom Endt
 
-.AI the assuming devsecops
+.AI 
+the assumptous DevOps
 
 .AB
 
@@ -31,7 +34,7 @@ luctus ut. Sed pulvinar mi a dolor viverra, eu vehicula mi maximus. Nam gravida
 id purus sodales vestibulum. Fusce id purus malesuada, malesuada urna at,
 elementum velit. Aliquam tempor efficitur neque eget feugiat.
 
-
+.I
  Morbi id dui et velit ullamcorper congue. Fusce id metus vitae nunc molestie
 pellentesque ut quis turpis. Nunc quis metus a sapien pulvinar iaculis id at
 augue. Interdum et malesuada fames ac ante ipsum primis in faucibus.
