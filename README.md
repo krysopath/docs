@@ -21,7 +21,7 @@ refer -p bibliography <file> | groff -ms -Tpdf > file.pdf
 add this to your `~/.vimrc`:
 ```
 if has("autocmd")
-  au BufWritePost *.ms !refer -p $(dirname %:p)/biblio %:p |groff -ms -Tpdf > %:p.pdf
+  au BufWritePost *.ms !refer -p $(dirname %:p)/biblio %:p |groff -ms -Tpdf > $(echo %:p | sed  's/.ms/.pdf/')
 endif
 ```
-> if your pdf viewer can read from `stdin` you can replace `> %:p.pdf` with `| tee %:p.pdf | viewer - ` to open a render after a buffer has been written.
+> if your pdf viewer can read from `stdin` you can replace `> %:p.pdf` with `| tee $(echo %:p | sed  's/.ms/.pdf/') | viewer - ` to open a render after a buffer has been written.
