@@ -13,6 +13,7 @@ apt install groff make
 ## generate a document
 
 ```
+refer -p bibliography <file> |groff -ms -Tpdf > file.pdf
 ```
 
 ## install a vim autocommand
@@ -20,8 +21,7 @@ apt install groff make
 add this to your `~/.vimrc`:
 ```
 if has("autocmd")
-  au BufWritePost *.ms !refer -p bibliography %:p |groff -ms -Tpdf | tee %:p.pdf | zathura -
+  au BufWritePost *.ms !refer -p bibliography %:p |groff -ms -Tpdf > %:p.pdf
 endif
 ```
-> if your xdg-open pdf viewer can read from `stdin` you can use that instead of zathura
-else you need to install `zathura` for this command to work.
+> if your pdf viewer can read from `stdin` you can replace `> %:p.pdf` with `| tee %:p.pdf | viewer - ` to open a render after a buffer has been written.
