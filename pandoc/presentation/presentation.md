@@ -4,7 +4,7 @@ title:
 author:
 - krysopath
 logo: logo.png 
-colortheme: crane
+colortheme: beetle 
 aspectratio: 169
 institute: suckless documents
 ---
@@ -13,7 +13,7 @@ institute: suckless documents
 
 ![image](logo.png)
 
-# SLide 2
+# Slide 2
 
 *the state of ISSUE*
 
@@ -44,3 +44,4 @@ some other text
 
 # Slide 4
 
+>*ominous quote* with **bold** ~subscript~
