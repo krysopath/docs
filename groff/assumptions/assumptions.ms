@@ -1,3 +1,7 @@
+.so macros.groff
+
+.ps 10
+
 .TL 
 General Assumption
 
@@ -7,8 +11,8 @@ General Assumption
 .AI 
 the assumptous DevOps
 
-.AB
 
+.AB
 .I
  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
 sagittis lectus non ipsum condimentum blandit. Integer dolor elit, cursus in
@@ -19,8 +23,8 @@ fringilla massa, a porta magna dapibus et. Pellentesque in massa nisl. Duis
 ipsum mi, pharetra et ipsum in, tincidunt pharetra justo. Cras laoreet ac ante
 ac placerat. Aenean vehicula tristique sollicitudin. In feugiat efficitur enim
 ut laoreet. Sed odio urna, cursus id enim eu, mollis ullamcorper massa. Nullam
-vel luctus odio. In at diam at ipsum pellentesque ornare quis ut metus. Sed
-vestibulum gravida magna vitae molestie.
+vel luctus odio. In at diam at ipsum pellentesque ornare quis ut metus. 
+.B "Sed vestibulum gravida magna vitae molestie." ) (
 
 .I
  Ut metus velit, vehicula sit amet luctus et, dignissim ut mauris. Praesent
@@ -117,10 +121,11 @@ eleifend ipsum lacinia quis.  Nunc volutpat posuere molestie. Donec egestas
 laoreet turpis, et pellentesque urna rhoncus at. 
 
 .RS 
-.I 
+.I
 Aenean nibh mi, scelerisque nec magna in, tincidunt dapibus mi. Nam
-posuere nulla id lectus luctus, non consequat velit porta. Praesent viverra
+posuere nulla id lectus luctus, \fBnon consequat\fP velit porta. Praesent viverra
 velit sodales semper tristique. Duis nec nisi libero. 
+
 .[
 foolonthehill
 .]
@@ -142,7 +147,38 @@ lobortis quaerendum, eius malis eos ei. Illum iusto suscipit at nam, qui id
 imperdiet repudiandae, ea vocibus fierent detraxit eos. Tale case pertinacia
 nec no.
 
+.gcolor red
 This is assumed.
+.gcolor
+
 .[
 Die Liebe in den Zeiten der Cholera
 .]
+
+.NH
+The weather
+
+.PP
+
+.sy date > /tmp/date.log
+
+.so /tmp/date.log
+
+.SH
+Lists
+.IP \(bu 2
+one
+.IP \(bu 2
+two
+.IP \(bu 2
+three
+
+.SH
+A Break for 
+.BL
+1
+.BL
+2
+.BL
+3
+
